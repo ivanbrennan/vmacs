@@ -1,3 +1,8 @@
+if exists("g:autoloaded_encoding") || &cp
+  finish
+endif
+let g:autoloaded_encoding = 1
+
 " Functions for working with multibyte strings.
 " Adapted from https://github.com/LucHermitte/lh-vim-lib
 

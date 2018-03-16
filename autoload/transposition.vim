@@ -1,3 +1,8 @@
+if exists("g:autoloaded_transposition") || &cp
+  finish
+endif
+let g:autoloaded_transposition = 1
+
 let s:plain_left  = "\<Left>"
 let s:insert_left = "\<C-G>U\<Left>"
 
