@@ -15,13 +15,14 @@ func! transposition#transpose(mode)
 endf
 
 func! s:cursor(line, col)
-  return {
-        \  'line': a:line,
-        \  'col': a:col,
-        \  'current_char': function('s:current_char'),
-        \  'previous_char': function('s:previous_char'),
-        \  'pre_previous_char': function('s:pre_previous_char')
-        \}
+  return
+  \ {
+  \   'line': a:line,
+  \   'col': a:col,
+  \   'current_char': function('s:current_char'),
+  \   'previous_char': function('s:previous_char'),
+  \   'pre_previous_char': function('s:pre_previous_char')
+  \ }
 endf
 
 func! s:current_char() dict
